@@ -1,0 +1,281 @@
+/* ────────────────────────────────────────────────
+   SECTION
+──────────────────────────────────────────────── */
+.section {
+  position: relative;
+  background: #0c0c0c;
+  padding: 100px 2rem 110px;
+  overflow: hidden;
+}
+
+/* Subtle dot-grid background */
+.bgDots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.045) 1px,
+    transparent 1px
+  );
+  background-size: 32px 32px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+}
+
+/* ────────────────────────────────────────────────
+   INNER
+──────────────────────────────────────────────── */
+.inner {
+  position: relative;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* ────────────────────────────────────────────────
+   EYEBROW / HEADLINE
+──────────────────────────────────────────────── */
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #00d4c8;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.headline {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.accent {
+  color: #00d4c8;
+}
+
+/* ────────────────────────────────────────────────
+   TIMELINE
+──────────────────────────────────────────────── */
+.timeline {
+  position: relative;
+  width: 100%;
+}
+
+/* ── Connector line layer ── */
+.lineTrack {
+  position: absolute;
+  top: 42px; /* vertically centered on icon boxes */
+  left: calc(100% / 10); /* from center of first icon */
+  right: calc(100% / 10); /* to center of last icon */
+  height: 2px;
+  z-index: 0;
+}
+
+.lineBase {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 2px;
+}
+
+/* The beam — slides from left → right */
+.beam {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 0%;
+  height: 6px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 212, 200, 0.2) 30%,
+    rgba(0, 212, 200, 0.9) 70%,
+    #00d4c8 100%
+  );
+  box-shadow:
+    0 0 8px rgba(0, 212, 200, 0.9),
+    0 0 20px rgba(0, 212, 200, 0.5),
+    0 0 40px rgba(0, 212, 200, 0.25);
+  transition: none;
+}
+
+.beamActive {
+  width: 100%;
+  transition: width 2.8s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* ── Steps grid ── */
+.steps {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 0 8px;
+}
+
+/* ────────────────────────────────────────────────
+   ICON BOX
+──────────────────────────────────────────────── */
+.iconWrap {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  border-radius: 14px;
+  background: #13161d;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+
+  /* Hidden by default */
+  opacity: 0;
+  transform: scale(0.7);
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.iconRevealed {
+  opacity: 1;
+  transform: scale(1);
+  border-color: rgba(0, 212, 200, 0.25);
+  box-shadow:
+    0 0 0 1px rgba(0, 212, 200, 0.1),
+    0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Number badge — top-left corner */
+.badge {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #e84b2a;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.02em;
+  z-index: 2;
+  box-shadow: 0 0 8px rgba(232, 75, 42, 0.5);
+}
+
+.iconInner {
+  width: 28px;
+  height: 28px;
+  color: #9ca3af;
+  transition: color 0.3s ease;
+}
+
+.iconRevealed .iconInner {
+  color: #d1d5db;
+}
+
+/* Glow burst on reveal */
+.glow {
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 212, 200, 0.25) 0%, transparent 70%);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: none;
+  pointer-events: none;
+}
+
+.glowActive {
+  animation: glowBurst 0.8s ease-out forwards;
+}
+
+@keyframes glowBurst {
+  0%   { opacity: 0.9; transform: scale(0.6); }
+  60%  { opacity: 0.4; transform: scale(1.3); }
+  100% { opacity: 0;   transform: scale(1.6); }
+}
+
+/* ────────────────────────────────────────────────
+   TEXT BELOW
+──────────────────────────────────────────────── */
+.textWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  padding: 0 4px;
+
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease 0.15s, transform 0.5s ease 0.15s;
+}
+
+.textRevealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stepTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #f3f4f6;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.stepDesc {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #6b7280;
+  line-height: 1.65;
+}
+
+/* ────────────────────────────────────────────────
+   RESPONSIVE
+──────────────────────────────────────────────── */
+@media (max-width: 860px) {
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 0;
+  }
+
+  .lineTrack {
+    display: none;
+  }
+
+  .step:nth-child(3) { grid-column: 1 / -1; justify-self: center; width: 33%; }
+}
+
+@media (max-width: 540px) {
+  .steps {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .section {
+    padding: 80px 1.25rem 80px;
+  }
+}

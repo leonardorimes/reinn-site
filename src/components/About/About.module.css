@@ -1,0 +1,159 @@
+.section {
+  position: relative;
+  background: #0c0c0c;
+  padding: 100px 2rem 120px;
+  overflow: hidden;
+}
+
+.inner {
+  position: relative;
+  max-width: 900px; /* narrowed to match the card focus in image */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #00d4c8;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.headline {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.nameAccent {
+  color: #00d4c8;
+}
+
+/* ────────────────────────────────────────────────
+   STORY CARD
+──────────────────────────────────────────────── */
+.card {
+  background: #111318;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 48px;
+  width: 100%;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+  
+  /* Entry animation */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition-delay: 0.2s;
+}
+
+.cardVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cardHeader {
+  margin-bottom: 2rem;
+}
+
+.logoIcon {
+  display: flex;
+  opacity: 0.9;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.mainStatement {
+  font-size: clamp(1.25rem, 3vw, 1.625rem);
+  font-weight: 700;
+  color: #f3f4f6;
+  line-height: 1.4;
+  max-width: 100%;
+}
+
+.strongRed {
+  color: #ff1a1a; 
+  font-weight: 800;
+}
+
+.gradientDrop {
+  background: linear-gradient(90deg, #ff4c26 0%, #e84b2a 50%, #ff7043 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.descParagraph {
+  font-size: 0.9375rem;
+  color: #9ca3af;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* ────────────────────────────────────────────────
+   RESPONSIVE
+──────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .section {
+    padding: 80px 1.25rem 80px;
+  }
+  
+  .card {
+    padding: 32px 24px;
+    border-radius: 16px;
+  }
+  
+  .cardContent {
+    gap: 1.75rem;
+  }
+  
+  .mainStatement {
+    font-size: 1.125rem;
+  }
+  
+  .descParagraph {
+    font-size: 0.875rem;
+  }
+}
+
+.logoIcon, .mainStatement, .descParagraph {
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.animateIn {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.aboutLogo {
+  height: 32px;
+  width: auto;
+  display: block;
+}

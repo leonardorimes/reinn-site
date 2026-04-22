@@ -1,0 +1,203 @@
+/* ────────────────────────────────────────────────
+   SECTION
+──────────────────────────────────────────────── */
+.section {
+  position: relative;
+  background: #0c0c0c;
+  padding: 100px 2rem 110px;
+  overflow: hidden;
+}
+
+/* Asymmetric side glows — matches the print */
+.bgLeft {
+  position: absolute;
+  top: 30%;
+  left: -120px;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(232, 75, 42, 0.14) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(2px);
+}
+
+.bgRight {
+  position: absolute;
+  bottom: 10%;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(232, 75, 42, 0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ────────────────────────────────────────────────
+   INNER
+──────────────────────────────────────────────── */
+.inner {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ────────────────────────────────────────────────
+   EYEBROW / HEADLINE
+──────────────────────────────────────────────── */
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #e84b2a;
+  text-transform: uppercase;
+  margin-bottom: 0.875rem;
+}
+
+.headline {
+  font-size: clamp(1.875rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.accent {
+  color: #e84b2a;
+}
+
+/* ────────────────────────────────────────────────
+   GRID
+──────────────────────────────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+/* ────────────────────────────────────────────────
+   CARD
+──────────────────────────────────────────────── */
+.card {
+  position: relative;
+  padding: 36px 30px 32px;
+  border-radius: 14px;
+  border: 1px solid rgba(232, 75, 42, 0.12);
+  background: #100b0a; /* very dark warm near-black */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+
+  /* Entry animation */
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.55s ease,
+    transform 0.55s cubic-bezier(0.34, 1.3, 0.64, 1),
+    border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(232, 75, 42, 0.28);
+}
+
+.cardVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Inner radial glow — red in upper-left corner */
+.cardGlow {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 220px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(232, 75, 42, 0.18) 0%,
+    rgba(180, 40, 20, 0.08) 45%,
+    transparent 70%
+  );
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .cardGlow {
+  opacity: 1.3;
+}
+
+/* ── Icon ── */
+.iconBox {
+  width: 28px;
+  height: 28px;
+  color: #e84b2a;
+  margin-bottom: 6px;
+}
+
+.iconBox svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Big number ── */
+.metric {
+  font-size: clamp(2.75rem, 6vw, 4rem);
+  font-weight: 900;
+  color: #e84b2a;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.suffix {
+  font-size: 0.55em;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* ── Text ── */
+.cardTitle {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #f3f4f6;
+  letter-spacing: -0.01em;
+  margin-top: 2px;
+}
+
+.cardDesc {
+  font-size: 0.8125rem;
+  color: #6b7280;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+/* ────────────────────────────────────────────────
+   RESPONSIVE
+──────────────────────────────────────────────── */
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .section {
+    padding: 80px 1.25rem 80px;
+  }
+
+  .card {
+    padding: 28px 22px;
+  }
+}
