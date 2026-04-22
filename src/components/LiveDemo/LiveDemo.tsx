@@ -12,7 +12,7 @@ const MESSAGES = [
   { from: "user" as const, text: "Around 200-300 per month. We only manage to follow up on maybe half.", typingMs: 0 },
   { from: "bot"  as const, text: "Got it. With REINN, you'd be responding to 100% of those leads instantly — qualifying them and nurturing the ones that aren't ready yet. Our clients typically see a 3x increase in booked appointments.", typingMs: 2400 },
   { from: "user" as const, text: "That sounds great. How can we get started?", typingMs: 0 },
-  { from: "bot"  as const, text: "Perfect! I'd love to set up a quick strategy call so we can map this to your business. I have availability tomorrow at 10am or 2pm — which works best for you?", typingMs: 2000 },
+  { from: "bot"  as const, text: "Perfect! I'd love to help you get your custom plan so we can map this to your business. I have availability tomorrow at 10am or 2pm — which works best for you?", typingMs: 2000 },
   { from: "user" as const, text: "2pm works.", typingMs: 0 },
   { from: "bot"  as const, text: "Done ✅ You're booked for tomorrow at 2pm. You'll receive a calendar invite and a confirmation SMS shortly. Looking forward to helping you scale! 🚀", typingMs: 1800 },
 ];

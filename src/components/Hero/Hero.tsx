@@ -96,7 +96,7 @@ export default function Hero() {
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <polygon points="2,1 13,7 2,13" fill="currentColor" />
             </svg>
-            Book a Strategy Call
+            Get Your Custom Plan
           </a>
         </div>
 
