@@ -65,20 +65,34 @@ export default function Hero() {
 
         {/* Sub-copy */}
         <p className={styles.subCopy}>
-          REINN helps small and medium businesses capture every opportunity
-          and convert them into scheduled appointments — using AI-driven
-          processes and structured CRM management.
+          REINN helps small and medium businesses capture every opportunity and
+          convert them into scheduled appointments — using AI-driven processes
+          and structured CRM management.
         </p>
 
         {/* CTA Buttons */}
         <div className={styles.ctaRow}>
-          <a href="#ai-sales" className={styles.ctaPrimary} id="hero-cta-primary">
+          <a
+            href="#live-demo"
+            className={styles.ctaPrimary}
+            id="hero-cta-primary"
+          >
             Discover the AI Sales Engine
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                stroke="currentColor"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </a>
-          <a href="#contact" className={styles.ctaSecondary} id="hero-cta-secondary">
+          <a
+            href="#contact"
+            className={styles.ctaSecondary}
+            id="hero-cta-secondary"
+          >
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <polygon points="2,1 13,7 2,13" fill="currentColor" />
             </svg>
