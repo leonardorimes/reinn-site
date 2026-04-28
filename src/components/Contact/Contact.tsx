@@ -68,6 +68,11 @@ export default function Contact() {
             ></iframe>
             <Script src="https://link.msgsndr.com/js/form_embed.js" strategy="afterInteractive" />
           </div>
+          <div className={styles.legalWidget}>
+            <p className={styles.legalText}>
+              By submitting, you agree to our <a href="https://www.reinn.biz/terms-and-conditions" target="_blank" rel="noopener noreferrer" className={styles.legalLink}>Terms & Conditions</a> and <a href="https://www.reinn.biz/privacy-policy" target="_blank" rel="noopener noreferrer" className={styles.legalLink}>Privacy Policy</a>.
+            </p>
+          </div>
         </div>
       </div>
     </section>
