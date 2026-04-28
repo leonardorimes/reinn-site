@@ -1,7 +1,6 @@
 "use client";
 
 import Script from "next/script";
-import Link from "next/link";
 import styles from "./Contact.module.css";
 
 export default function Contact() {
@@ -68,11 +67,6 @@ export default function Contact() {
               title="Website Form"
             ></iframe>
             <Script src="https://link.msgsndr.com/js/form_embed.js" strategy="afterInteractive" />
-          </div>
-          <div className={styles.legalWidget}>
-            <p className={styles.legalText}>
-              By submitting, you agree to our <Link href="/terms-and-conditions" target="_blank" rel="noopener noreferrer" className={styles.legalLink}>Terms & Conditions</Link> and <Link href="/privacy-policy" target="_blank" rel="noopener noreferrer" className={styles.legalLink}>Privacy Policy</Link>.
-            </p>
           </div>
         </div>
       </div>

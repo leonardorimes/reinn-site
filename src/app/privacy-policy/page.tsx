@@ -16,13 +16,13 @@ export default function PrivacyPolicy() {
           <h1 className={styles.titleSerif}>
             PRIVACY POLICY
           </h1>
-          <div className={styles.lastUpdated}>Last Updated: April 27, 2026</div>
+          <div className={styles.lastUpdated}>Last Updated: April 28, 2026</div>
         </div>
 
         <div className={styles.contentBox}>
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>PRIVACY POLICY</h2>
-            <p className={styles.lastUpdated} style={{ marginBottom: '16px' }}>Last Updated: April 27, 2026</p>
+            <p className={styles.lastUpdated} style={{ marginBottom: '16px' }}>Last Updated: April 28, 2026</p>
             <p className={styles.text}>
               At Reinn Global Marketing LLC, accessible from www.reinn.biz, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Reinn Global Marketing LLC and how we use it.
             </p>
@@ -63,25 +63,47 @@ export default function PrivacyPolicy() {
               No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. Information sharing to subcontractors in support services, such as customer service, is permitted. All other use case categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
             </p>
           </div>
+
+          <div className={styles.section}>
+            <h2 className={styles.sectionTitle}>4. SMS Opt-In and Messaging Details</h2>
+            <p className={styles.text}>
+              Customers can opt-in to our SMS program through the contact forms available on our website (https://www.reinn.biz). By providing your phone number and checking the consent box, you agree to receive promotional and marketing text messages from Reinn Global Marketing LLC.
+            </p>
+            <p className={styles.text}>
+              <b>Purpose:</b> Messages are sent to provide updates on consulting services, professional development, and special offers.
+            </p>
+            <p className={styles.text}>
+              <b>Frequency:</b> Message frequency varies based on user interaction and campaign updates.
+            </p>
+            <p className={styles.text}>
+              <b>Opt-Out:</b> You can cancel the SMS service at any time. Just text "STOP" to our number. After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed.
+            </p>
+            <p className={styles.text}>
+              <b>Assistance:</b> If you are experiencing issues with the messaging program you can reply with the keyword HELP for more assistance.
+            </p>
+            <p className={styles.text}>
+              <b>Rates:</b> As always, message and data rates may apply for any messages sent to you from us and to us from you.
+            </p>
+          </div>
         </div>
 
         <div className={styles.contentBox}>
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>4. Cookies and Web Beacons</h2>
+            <h2 className={styles.sectionTitle}>5. Cookies and Web Beacons</h2>
             <p className={styles.text}>
               Like any other website, Reinn Global Marketing LLC uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
             </p>
           </div>
 
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>5. Third-Party Privacy Policies</h2>
+            <h2 className={styles.sectionTitle}>6. Third-Party Privacy Policies</h2>
             <p className={styles.text}>
               Reinn Global Marketing LLC's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
             </p>
           </div>
 
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>6. GDPR & CCPA Data Protection Rights</h2>
+            <h2 className={styles.sectionTitle}>7. GDPR & CCPA Data Protection Rights</h2>
             <p className={styles.text}>
               Depending on your location, you may have the following rights:
             </p>
@@ -94,21 +116,21 @@ export default function PrivacyPolicy() {
           </div>
 
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>7. Security of Your Information</h2>
+            <h2 className={styles.sectionTitle}>8. Security of Your Information</h2>
             <p className={styles.text}>
               We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you transmit to us, please be aware that despite our efforts, no security measures are perfect or impenetrable.
             </p>
           </div>
 
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>8. Changes to This Privacy Policy</h2>
+            <h2 className={styles.sectionTitle}>9. Changes to This Privacy Policy</h2>
             <p className={styles.text}>
               We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
             </p>
           </div>
 
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>9. Contact Us</h2>
+            <h2 className={styles.sectionTitle}>10. Contact Us</h2>
             <p className={styles.text}>
               If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
               <br />Reinn Global Marketing LLC Website: www.reinn.biz
