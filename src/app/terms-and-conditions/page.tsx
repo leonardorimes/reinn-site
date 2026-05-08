@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms and Conditions | REINN",
-  description: "Terms and Conditions for REINN Global Marketing LLC.",
+  description: "Terms and Conditions for Reinn Global Business LLC.",
 };
 
 export default function TermsAndConditions() {
@@ -13,7 +13,7 @@ export default function TermsAndConditions() {
     <div className={styles.container}>
       <div className={styles.inner}>
         <div className={styles.header}>
-          <div className={styles.eyebrow}>REINN GLOBAL MARKETING LLC</div>
+          <div className={styles.eyebrow}>Reinn Global Business LLC</div>
           <h1 className={styles.title}>
             Terms and <span className={styles.titleUnderline}>Conditions</span>
           </h1>
@@ -25,14 +25,14 @@ export default function TermsAndConditions() {
             <h2 className={styles.sectionTitle}>TERMS AND CONDITIONS</h2>
             <p className={styles.lastUpdated} style={{ marginBottom: '16px' }}>Last Updated: April 27, 2026</p>
             <p className={styles.text}>
-              Welcome to Reinn Global Marketing LLC. These Terms and Conditions ("Terms") govern your use of our website (www.reinn.biz) and our services. By accessing our website or using our services, you agree to be bound by these Terms. If you do not agree, please do not use our services.
+              Welcome to Reinn Global Business LLC. These Terms and Conditions ("Terms") govern your use of our website (www.reinn.biz) and our services. By accessing our website or using our services, you agree to be bound by these Terms. If you do not agree, please do not use our services.
             </p>
           </div>
 
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>1. Services Provided</h2>
             <p className={styles.text}>
-              Reinn Global Marketing LLC provides digital marketing solutions, including but not limited to CRM automation, lead generation, and communication services. We reserve the right to modify or discontinue any service at our discretion.
+              Reinn Global Business LLC provides digital marketing solutions, including but not limited to CRM automation, lead generation, and communication services. We reserve the right to modify or discontinue any service at our discretion.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export default function TermsAndConditions() {
               We value your privacy and your preference for how we communicate with you.
             </p>
             <p className={styles.text}>
-              <b>Program Name:</b> Reinn Global Marketing LLC.
+              <b>Program Name:</b> Reinn Global Business LLC.
             </p>
             <p className={styles.text}>
               <b>Program Description:</b> By providing your phone number and opting in via our web forms, you may receive text messages related to appointment reminders, service updates, account notifications, and promotional marketing offers.
@@ -78,14 +78,14 @@ export default function TermsAndConditions() {
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>4. Intellectual Property</h2>
             <p className={styles.text}>
-              All content on this website, including logos, text, graphics, and software, is the property of Reinn Global Marketing LLC and is protected by copyright and intellectual property laws. You may not reproduce or distribute any content without express written permission.
+              All content on this website, including logos, text, graphics, and software, is the property of Reinn Global Business LLC and is protected by copyright and intellectual property laws. You may not reproduce or distribute any content without express written permission.
             </p>
           </div>
 
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>5. Limitation of Liability</h2>
             <p className={styles.text}>
-              Reinn Global Marketing LLC shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use our services or website.
+              Reinn Global Business LLC shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use our services or website.
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export default function TermsAndConditions() {
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>7. Governing Law</h2>
             <p className={styles.text}>
-              These Terms shall be governed by and construed in accordance with the laws of the United States and the State in which Reinn Global Marketing LLC is registered, without regard to its conflict of law provisions.
+              These Terms shall be governed by and construed in accordance with the laws of the United States and the State in which Reinn Global Business LLC is registered, without regard to its conflict of law provisions.
             </p>
           </div>
 
@@ -114,7 +114,7 @@ export default function TermsAndConditions() {
             <h2 className={styles.sectionTitle}>9. Contact Us</h2>
             <p className={styles.text}>
               If you have any questions about these Terms, please contact us at:
-              <br />Reinn Global Marketing LLC
+              <br />Reinn Global Business LLC
               <br />Email: kaue@reinn.biz
               <br />Website: www.reinn.biz
             </p>
@@ -129,7 +129,7 @@ export default function TermsAndConditions() {
             Email: kaue@reinn.biz | Website: www.reinn.biz
           </div>
           <div className={styles.footerCopy}>
-            &copy; 2026 Reinn Global Marketing LLC. All rights reserved.
+            &copy; 2026 Reinn Global Business LLC. All rights reserved.
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | REINN",
-  description: "Privacy Policy for REINN Global Marketing LLC.",
+  description: "Privacy Policy for Reinn Global Business LLC.",
 };
 
 export default function PrivacyPolicy() {
@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
     <div className={styles.container}>
       <div className={styles.inner}>
         <div className={styles.header}>
-          <div className={styles.eyebrow}>REINN GLOBAL MARKETING LLC</div>
+          <div className={styles.eyebrow}>Reinn Global Business LLC</div>
           <h1 className={styles.titleSerif}>
             PRIVACY POLICY
           </h1>
@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
             <h2 className={styles.sectionTitle}>PRIVACY POLICY</h2>
             <p className={styles.lastUpdated} style={{ marginBottom: '16px' }}>Last Updated: April 28, 2026</p>
             <p className={styles.text}>
-              At Reinn Global Marketing LLC, accessible from www.reinn.biz, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Reinn Global Marketing LLC and how we use it.
+              At Reinn Global Business LLC, accessible from www.reinn.biz, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Reinn Global Business LLC and how we use it.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ export default function PrivacyPolicy() {
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>4. SMS Opt-In and Messaging Details</h2>
             <p className={styles.text}>
-              Customers can opt-in to our SMS program through the contact forms available on our website (https://www.reinn.biz). By providing your phone number and checking the consent box, you agree to receive promotional and marketing text messages from Reinn Global Marketing LLC.
+              Customers can opt-in to our SMS program through the contact forms available on our website (https://www.reinn.biz). By providing your phone number and checking the consent box, you agree to receive promotional and marketing text messages from Reinn Global Business LLC.
             </p>
             <p className={styles.text}>
               <b>Purpose:</b> Messages are sent to provide updates on consulting services, professional development, and special offers.
@@ -91,14 +91,14 @@ export default function PrivacyPolicy() {
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>5. Cookies and Web Beacons</h2>
             <p className={styles.text}>
-              Like any other website, Reinn Global Marketing LLC uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
+              Like any other website, Reinn Global Business LLC uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
             </p>
           </div>
 
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>6. Third-Party Privacy Policies</h2>
             <p className={styles.text}>
-              Reinn Global Marketing LLC's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
+              Reinn Global Business LLC's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
             </p>
           </div>
 
@@ -133,7 +133,7 @@ export default function PrivacyPolicy() {
             <h2 className={styles.sectionTitle}>10. Contact Us</h2>
             <p className={styles.text}>
               If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
-              <br />Reinn Global Marketing LLC Website: www.reinn.biz
+              <br />Reinn Global Business LLC Website: www.reinn.biz
               <br />Email: kaue@reinn.biz
             </p>
           </div>
@@ -147,7 +147,7 @@ export default function PrivacyPolicy() {
             Email: kaue@reinn.biz | Website: www.reinn.biz
           </div>
           <div className={styles.footerCopy}>
-            &copy; 2026 Reinn Global Marketing LLC. All rights reserved.
+            &copy; 2026 Reinn Global Business LLC. All rights reserved.
           </div>
         </div>
       </div>
