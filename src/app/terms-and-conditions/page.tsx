@@ -13,7 +13,7 @@ export default function TermsAndConditions() {
     <div className={styles.container}>
       <div className={styles.inner}>
         <div className={styles.header}>
-          <div className={styles.eyebrow}>REINN GLOBAL BUSINESS LLC</div>
+          <div className={styles.eyebrow}>REINN GLOBAL MARKETING LLC</div>
           <h1 className={styles.title}>
             Terms and <span className={styles.titleUnderline}>Conditions</span>
           </h1>
@@ -49,7 +49,7 @@ export default function TermsAndConditions() {
               We value your privacy and your preference for how we communicate with you.
             </p>
             <p className={styles.text}>
-              <b>Business Name:</b> Reinn Global Business LLC.
+              <b>Program Name:</b> Reinn Global Marketing LLC.
             </p>
             <p className={styles.text}>
               <b>Program Description:</b> By providing your phone number and opting in via our web forms, you are consenting to receive text messages from us. You can expect to receive messages regarding appointment reminders, service updates, account notifications, professional development tips, and promotional marketing offers related to our consulting and automation services.
@@ -76,7 +76,7 @@ export default function TermsAndConditions() {
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>4. Intellectual Property</h2>
             <p className={styles.text}>
-              All content on this website, including logos, text, graphics, and software, is the property of Reinn Global Business LLC and is protected by copyright and intellectual property laws.
+              All content on this website, including logos, text, graphics, and software, is the property of Reinn Global Marketing LLC and is protected by copyright and intellectual property laws. You may not reproduce or distribute any content without express written permission.
             </p>
           </div>
 
@@ -97,7 +97,7 @@ export default function TermsAndConditions() {
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>7. Governing Law</h2>
             <p className={styles.text}>
-              These Terms shall be governed by and construed in accordance with the laws of the United States.
+              These Terms shall be governed by and construed in accordance with the laws of the United States and the State in which Reinn Global Marketing LLC is registered, without regard to its conflict of law provisions.
             </p>
           </div>
 
