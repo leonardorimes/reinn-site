@@ -53,6 +53,36 @@
   white-space: nowrap;
 }
 
+.copyrightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.legalLinks {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.legalLink {
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legalLink:hover {
+  color: #9ca3af;
+}
+
+.separator {
+  color: #374151;
+}
+
 /* ────────────────────────────────────────────────
    RESPONSIVE
 ──────────────────────────────────────────────── */
@@ -61,6 +91,10 @@
     flex-direction: column;
     gap: 24px;
     text-align: center;
+  }
+  
+  .copyrightContainer {
+    align-items: center;
   }
   
   .side {
