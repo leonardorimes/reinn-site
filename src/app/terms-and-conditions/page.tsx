@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms and Conditions | REINN",
-  description: "Terms and Conditions for REINN Global Marketing LLC.",
+  description: "Terms and Conditions for Reinn Global Business LLC.",
 };
 
 export default function TermsAndConditions() {
@@ -13,7 +13,7 @@ export default function TermsAndConditions() {
     <div className={styles.container}>
       <div className={styles.inner}>
         <div className={styles.header}>
-          <div className={styles.eyebrow}>REINN GLOBAL MARKETING LLC</div>
+          <div className={styles.eyebrow}>REINN GLOBAL BUSINESS LLC</div>
           <h1 className={styles.title}>
             Terms and <span className={styles.titleUnderline}>Conditions</span>
           </h1>
@@ -22,17 +22,15 @@ export default function TermsAndConditions() {
 
         <div className={styles.contentBox}>
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>TERMS AND CONDITIONS</h2>
-            <p className={styles.lastUpdated} style={{ marginBottom: '16px' }}>Last Updated: April 27, 2026</p>
             <p className={styles.text}>
-              Welcome to Reinn Global Marketing LLC. These Terms and Conditions ("Terms") govern your use of our website (www.reinn.biz) and our services. By accessing our website or using our services, you agree to be bound by these Terms. If you do not agree, please do not use our services.
+              Welcome to Reinn Global Business LLC. These Terms and Conditions ("Terms") govern your use of our website (www.reinn.biz) and our services. By accessing our website or using our services, you agree to be bound by these Terms. If you do not agree, please do not use our services.
             </p>
           </div>
 
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>1. Services Provided</h2>
             <p className={styles.text}>
-              Reinn Global Marketing LLC provides digital marketing solutions, including but not limited to CRM automation, lead generation, and communication services. We reserve the right to modify or discontinue any service at our discretion.
+              Reinn Global Business LLC provides digital marketing solutions, including but not limited to CRM automation, lead generation, and communication services. We reserve the right to modify or discontinue any service at our discretion.
             </p>
           </div>
 
@@ -51,25 +49,25 @@ export default function TermsAndConditions() {
               We value your privacy and your preference for how we communicate with you.
             </p>
             <p className={styles.text}>
-              <b>Program Name:</b> Reinn Global Marketing LLC.
+              <b>Business Name:</b> Reinn Global Business LLC.
             </p>
             <p className={styles.text}>
-              <b>Program Description:</b> By providing your phone number and opting in via our web forms, you may receive text messages related to appointment reminders, service updates, account notifications, and promotional marketing offers.
+              <b>Program Description:</b> By providing your phone number and opting in via our web forms, you are consenting to receive text messages from us. You can expect to receive messages regarding appointment reminders, service updates, account notifications, professional development tips, and promotional marketing offers related to our consulting and automation services.
             </p>
             <p className={styles.text}>
-              <b>Cancellation:</b> You can cancel the SMS service at any time. Simply text "STOP" to the number you are receiving messages from. Upon sending "STOP," we will confirm your unsubscribe status via SMS. Following this confirmation, you will no longer receive SMS messages from us. To rejoin, sign up as you did initially, and we will resume sending SMS messages to you.
+              <b>Cancellation:</b> You can cancel the SMS service at any time. Just text "STOP" to +1 (407) 753-7274. After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us. If you want to join again, just sign up as you did the first time and we will start sending SMS messages to you again.
             </p>
             <p className={styles.text}>
-              <b>Support:</b> For issues with our messaging service, you can reply with the keyword "HELP" for assistance or contact our support team at kaue@reinn.biz.
+              <b>Assistance:</b> If you are experiencing issues with the messaging program you can reply with the keyword HELP for more assistance, or you can get help directly at kaue@reinn.biz.
             </p>
             <p className={styles.text}>
               <b>Carrier Liability:</b> Carriers are not liable for delayed or undelivered messages.
             </p>
             <p className={styles.text}>
-              <b>Rates and Frequency:</b> As always, message and data rates may apply for messages sent to you from us and to us from you. Message frequency varies based on your interaction with us and the nature of the campaign. For questions about your text plan or data plan, contact your wireless provider.
+              <b>Rates and Frequency:</b> As always, message and data rates may apply for any messages sent to you from us and to us from you. You will receive message frequency based on your interaction with us and the nature of the campaign (e.g., up to 4 messages per month). If you have any questions about your text plan or data plan, it is best to contact your wireless provider.
             </p>
             <p className={styles.text}>
-              <b>Privacy:</b> For privacy-related inquiries, please refer to our Privacy Policy at <Link href="/privacy-policy" className={styles.link}>https://www.reinn.biz/privacy-policy</Link>.
+              <b>Privacy:</b> If you have any questions regarding privacy, please read our privacy policy: <Link href="/privacy-policy" className={styles.link}>https://www.reinn.biz/privacy-policy</Link>.
             </p>
           </div>
         </div>
@@ -78,35 +76,35 @@ export default function TermsAndConditions() {
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>4. Intellectual Property</h2>
             <p className={styles.text}>
-              All content on this website, including logos, text, graphics, and software, is the property of Reinn Global Marketing LLC and is protected by copyright and intellectual property laws. You may not reproduce or distribute any content without express written permission.
+              All content on this website, including logos, text, graphics, and software, is the property of Reinn Global Business LLC and is protected by copyright and intellectual property laws.
             </p>
           </div>
 
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>5. Limitation of Liability</h2>
             <p className={styles.text}>
-              Reinn Global Marketing LLC shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use our services or website.
+              Reinn Global Business LLC shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use our services or website.
             </p>
           </div>
 
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>6. Termination</h2>
             <p className={styles.text}>
-              We reserve the right to terminate or suspend your access to our services immediately, without prior notice, for conduct that we believe violates these Terms or is harmful to other users or our business interests.
+              We reserve the right to terminate or suspend your access to our services immediately, without prior notice, for conduct that we believe violates these Terms or is harmful to our business interests.
             </p>
           </div>
 
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>7. Governing Law</h2>
             <p className={styles.text}>
-              These Terms shall be governed by and construed in accordance with the laws of the United States and the State in which Reinn Global Marketing LLC is registered, without regard to its conflict of law provisions.
+              These Terms shall be governed by and construed in accordance with the laws of the United States.
             </p>
           </div>
 
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>8. Changes to Terms</h2>
             <p className={styles.text}>
-              We may update these Terms from time to time. We will notify you of any changes by posting the new Terms on this page. Your continued use of the service after changes are posted constitutes your acceptance of the new Terms.
+              We may update these Terms from time to time. We will notify you of any changes by posting the new Terms on this page.
             </p>
           </div>
 
@@ -114,7 +112,7 @@ export default function TermsAndConditions() {
             <h2 className={styles.sectionTitle}>9. Contact Us</h2>
             <p className={styles.text}>
               If you have any questions about these Terms, please contact us at:
-              <br />Reinn Global Marketing LLC
+              <br />Reinn Global Business LLC
               <br />Email: kaue@reinn.biz
               <br />Website: www.reinn.biz
             </p>
@@ -129,7 +127,7 @@ export default function TermsAndConditions() {
             Email: kaue@reinn.biz | Website: www.reinn.biz
           </div>
           <div className={styles.footerCopy}>
-            &copy; 2026 Reinn Global Marketing LLC. All rights reserved.
+            &copy; 2026 Reinn Global Business LLC. All rights reserved.
           </div>
         </div>
       </div>
